@@ -90,6 +90,11 @@ matrix:
 
 notifications:
   webhooks:
-    urls: https://tilde.slack.com/services/hooks/travis?token=N5Dc2tov6aTfOjXK1VOXlxiS
+    urls:
+      # These two hooks are the same, but one is encrypted for the private repo and one for the public
+      # Private
+      - secure: "rC3HtNB6WXXDf8f/MSGneByrFXkUqnA1LQpK9O2Aog8DeTRaKYHKA9Vf6BZkXuuqUNDLJuY67V0WzkxUuE1k5zI7sWCiqpAnzwuww22/514ZxCaKEsAk1OKNRmBGlXTEWvq174yPaFeMXj89OPGID3Cm1r8jNF6+xcNBOwKTt+E="
+      # Public
+      - secure: "bV0o10nnV0fYDQlOEGZuuGjUXS5msw644P8QR9vVoR4//XY0fqEPcpi3+YYER7qljXYHchBdJZPA3CZb4g9b5Y0tdOYCBmKGkEzss0JtKELwRc6jZ10/HsEYqaKmzKOUHvEMdD3kMxhvU1Zd/sujMKcrLQ7FZXeIdQxnkM0vSiA="
     on_success: change
     on_failure: always

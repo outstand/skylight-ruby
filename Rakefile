@@ -44,7 +44,8 @@ namespace :build do
     chdir TARGET_DIR do
       Bundler.with_clean_env do
         env = { SKYLIGHT_LIB_PATH: native,
-                SKYLIGHT_REQUIRED: true}.map{|k,v| "#{k}=#{v}" if v }.compact.join(' ')
+                SKYLIGHT_REQUIRED: true,
+                SKYLIGHT_EXT_STRICT: true }.map{|k,v| "#{k}=#{v}" if v }.compact.join(' ')
 
         run_cmd "#{env} ruby #{extconf}" or abort "failed to configure ruby ext"
 

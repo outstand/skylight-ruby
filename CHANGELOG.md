@@ -1,5 +1,6 @@
 ## Master
 
+* [BETA FEATURE] Support FreeBSD
 * [BETA FEATURE] Support musl-based OSes (including Alpine Linux)
 
 ## 1.0.0-beta5 (June 29, 2016)

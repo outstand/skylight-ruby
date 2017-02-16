@@ -9,7 +9,7 @@ module Skylight
       when /linux-musl/
         "linux-musl"
       when /linux/
-        "linux"
+        "linux-musl"
       when /darwin/
         "darwin"
       when /freebsd/
